@@ -1,0 +1,4 @@
+Create a GitHub Monorepo consisting of GitHub repos with the given prefix.
+
+Usage:
+    ./merge-repos.sh PREFIX
