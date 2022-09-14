@@ -32,7 +32,7 @@ merge2local() {
     gh repo clone $leaf -- --single-branch --quiet
 
     cd $wd/$leaf
-    git filter-repo --to-subdirectory-filter $suffix --quiet > /dev/null
+    git filter-repo --to-subdirectory-filter $suffix --quiet --force > /dev/null
 
     cd $wd/$root
     git remote add $suffix ../$leaf
